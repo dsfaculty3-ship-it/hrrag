@@ -1,0 +1,14 @@
+[project]
+name = "end-to-end-hr-rag-policy-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+end-to-end-hr-rag-policy-assistant = "end_to_end_hr_rag_policy_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
