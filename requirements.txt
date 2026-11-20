@@ -9,3 +9,4 @@ faiss-cpu
 
 # llm provider
 langchain-groq
+langchain_jina
