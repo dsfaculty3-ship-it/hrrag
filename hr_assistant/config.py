@@ -1,13 +1,13 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv
+load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 JINA_API_KEY = os.getenv("JINA_API_KEY")
 
 # load data
-DATA_FILE_PATH = os.path.join("data", "hr_policy.txt")
+DATA_DIR  = os.path.join("data", "data")
 
 # vector store
 VECTOR_STORE_PATH = os.path.join("data","faiss.index")

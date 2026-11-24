@@ -13,16 +13,18 @@ from hr_assistant.vector_store import (
     save_vector_store,
     vector_store_exists,
 )
+from hr_assistant.logger import get_logger
+logger = get_logger(__name__)
 
 
-def build_vector_store_for_document(file_path: str = config.DATA_FILE_PATH):
+def build_vector_store_for_document(file_path: str = config.DATA_DIR):
 
     if vector_store_exists():
         print("Found existing FAISS vector store. Loading it...")
         return load_vector_store()
 
     print("No existing vector store found. Creating a new one...")
-
+    logger.info("No vector store on disk, building it from scratch")
     documents = load_document(file_path)
     chunks = split_into_chunks(documents)
 
@@ -37,7 +39,7 @@ def build_vector_store_for_document(file_path: str = config.DATA_FILE_PATH):
     return vector_store
 
 
-def build_hr_assistant(file_path: str = config.DATA_FILE_PATH):
+def build_hr_assistant(file_path: str = config.DATA_DIR):
 
     vector_store = build_vector_store_for_document(file_path)
 

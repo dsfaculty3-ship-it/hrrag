@@ -1,0 +1,9 @@
+2026-11-24 09:06:41,883 | INFO | hr_assistant.vector_store | Loading faiss index from 'data\faiss.index'
+2026-11-24 09:06:41,884 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-24 09:06:41,901 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-11-24 09:06:41,903 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-11-24 09:06:41,906 | INFO | faiss.loader | Loading faiss.
+2026-11-24 09:06:42,020 | INFO | faiss.loader | Successfully loaded faiss.
+2026-11-24 09:06:42,070 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-24 09:06:42,088 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
