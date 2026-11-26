@@ -1,0 +1,67 @@
+2026-11-25 13:09:55,364 | INFO | hr_assistant.pipeline | Building HR assistant
+2026-11-25 13:09:55,364 | INFO | hr_assistant.pipeline | Vector store already exists, reusing it
+2026-11-25 13:09:55,364 | INFO | hr_assistant.vector_store | Loading faiss index from 'data\faiss.index'
+2026-11-25 13:09:55,364 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-25 13:09:55,370 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-11-25 13:09:55,370 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-11-25 13:09:55,370 | INFO | faiss.loader | Loading faiss.
+2026-11-25 13:09:55,983 | INFO | faiss.loader | Successfully loaded faiss.
+2026-11-25 13:09:56,050 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-25 13:09:56,055 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
+2026-11-25 13:11:32,757 | INFO | hr_assistant.pipeline | Building HR assistant
+2026-11-25 13:11:32,763 | INFO | hr_assistant.pipeline | Vector store already exists, reusing it
+2026-11-25 13:11:32,763 | INFO | hr_assistant.vector_store | Loading faiss index from 'data\faiss.index'
+2026-11-25 13:11:32,763 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-25 13:11:32,764 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-25 13:11:32,768 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
+2026-11-25 13:11:32,808 | INFO | hr_assistant.pipeline | HR assistant is ready to take questions
+2026-11-25 13:11:40,045 | INFO | hr_assistant.pipeline | User question: Hi
+2026-11-25 13:11:40,060 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:11:40,063 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:11:40,069 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chat_model_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:11:40,958 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 13:11:40,973 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_llm_end callback: TracerException('No indexed run ID 01a211a7-3365-7399-8daf-f5aa587ca0b7.')
+2026-11-25 13:11:40,973 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a7-335f-7268-b2ff-941e06fa263d.')
+2026-11-25 13:11:40,974 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a7-335c-72ed-9bdb-edf5dfc89674.')
+2026-11-25 13:14:15,530 | INFO | hr_assistant.pipeline | User question: tell me about maternity leaves
+2026-11-25 13:14:15,530 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:15,537 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:15,537 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chat_model_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:16,841 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 13:14:16,844 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_llm_end callback: TracerException('No indexed run ID 01a211a9-92b4-70b1-a448-66011a275f87.')
+2026-11-25 13:14:16,845 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-92b3-7655-87dc-6a597f3fe29e.')
+2026-11-25 13:14:16,848 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:16,851 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_tool_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:16,853 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_retriever_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:17,561 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_retriever_end callback: TracerException('No indexed run ID 01a211a9-97d5-707d-b4cc-fdcd86b8e4ab.')
+2026-11-25 13:14:17,561 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_tool_end callback: TracerException('No indexed run ID 01a211a9-97d3-74b5-be54-988ba55b91c8.')
+2026-11-25 13:14:17,562 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-97d0-7419-b1f7-9c5c73445b91.')
+2026-11-25 13:14:17,562 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:17,566 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chat_model_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:18,030 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 13:14:18,030 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_llm_end callback: TracerException('No indexed run ID 01a211a9-9a9e-7302-ac96-58adf050f808.')
+2026-11-25 13:14:18,030 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-9a9b-703b-9743-948443927e87.')
+2026-11-25 13:14:18,030 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:18,030 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_tool_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:18,030 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_retriever_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:18,451 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_retriever_end callback: TracerException('No indexed run ID 01a211a9-9c79-706f-b513-dfd06a7985e8.')
+2026-11-25 13:14:18,451 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_tool_end callback: TracerException('No indexed run ID 01a211a9-9c78-75d7-9100-4f2639df237e.')
+2026-11-25 13:14:18,451 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-9c76-7250-b3b7-a1875b9a5a08.')
+2026-11-25 13:14:18,451 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:18,451 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chat_model_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:19,008 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 13:14:19,009 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_llm_end callback: TracerException('No indexed run ID 01a211a9-9e1c-7782-ba3d-0e628e598b9b.')
+2026-11-25 13:14:19,010 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-9e1b-70e7-877c-1e2e9c42c786.')
+2026-11-25 13:14:19,010 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:19,011 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_tool_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:19,013 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_retriever_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:19,426 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_retriever_end callback: TracerException('No indexed run ID 01a211a9-a045-70a6-9116-1ed1b2eeb906.')
+2026-11-25 13:14:19,427 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_tool_end callback: TracerException('No indexed run ID 01a211a9-a044-762a-9bbb-0ec0378580cc.')
+2026-11-25 13:14:19,431 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-a043-745e-8a5c-6e752398d4aa.')
+2026-11-25 13:14:19,435 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:19,439 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chat_model_start callback: EnvAddressError("The LANGSMITH_AGENT_* env vars can't address a run (LANGSMITH_AGENT_ID='hrpolicyrag'): An address needs LANGSMITH_AGENT_ENVIRONMENT as well.")
+2026-11-25 13:14:20,208 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 13:14:20,208 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_llm_end callback: TracerException('No indexed run ID 01a211a9-a1ee-76ae-8c47-a54827d26960.')
+2026-11-25 13:14:20,208 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-a1eb-77ec-a6c6-27ddb0cd1134.')
+2026-11-25 13:14:20,208 | WARNING | langchain_core.callbacks.manager | Error in LangChainTracer.on_chain_end callback: TracerException('No indexed run ID 01a211a9-92b0-7377-a28a-300b16ea5c40.')

@@ -21,6 +21,7 @@ def build_vector_store_for_document(file_path: str = config.DATA_DIR):
 
     if vector_store_exists():
         print("Found existing FAISS vector store. Loading it...")
+        logger.info("Vector store already exists, reusing it")
         return load_vector_store()
 
     print("No existing vector store found. Creating a new one...")
@@ -40,6 +41,7 @@ def build_vector_store_for_document(file_path: str = config.DATA_DIR):
 
 
 def build_hr_assistant(file_path: str = config.DATA_DIR):
+    logger.info("Building HR assistant")
 
     vector_store = build_vector_store_for_document(file_path)
 
@@ -51,10 +53,13 @@ def build_hr_assistant(file_path: str = config.DATA_DIR):
 
     agent = create_hr_agent(llm, [search_tool])
 
+    logger.info("HR assistant is ready to take questions")
+
     return agent
 
 
 def ask(agent, question: str) -> str:
+    logger.info("User question: %s", question)
 
     response = agent.invoke({
         "messages": [

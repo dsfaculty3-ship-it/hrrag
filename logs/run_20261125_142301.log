@@ -1,0 +1,21 @@
+2026-11-25 14:23:05,266 | INFO | hr_assistant.pipeline | Building HR assistant
+2026-11-25 14:23:05,266 | INFO | hr_assistant.pipeline | Vector store already exists, reusing it
+2026-11-25 14:23:05,273 | INFO | hr_assistant.vector_store | Loading faiss index from 'data\faiss.index'
+2026-11-25 14:23:05,273 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-25 14:23:05,285 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-11-25 14:23:05,286 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-11-25 14:23:05,286 | INFO | faiss.loader | Loading faiss.
+2026-11-25 14:23:05,994 | INFO | faiss.loader | Successfully loaded faiss.
+2026-11-25 14:23:06,027 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-25 14:23:06,029 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
+2026-11-25 14:23:06,658 | INFO | hr_assistant.pipeline | HR assistant is ready to take questions
+2026-11-25 14:23:20,775 | INFO | hr_assistant.pipeline | User question: hi tell me about leave policies
+2026-11-25 14:23:21,833 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 14:23:24,789 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 14:23:52,266 | INFO | hr_assistant.pipeline | User question: tell me how to prepare copy
+2026-11-25 14:23:53,064 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 14:23:56,153 | INFO | hr_assistant.pipeline | User question: cofee
+2026-11-25 14:23:56,728 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 14:24:36,665 | INFO | hr_assistant.pipeline | User question: tell me your ceo mobile number
+2026-11-25 14:24:37,172 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

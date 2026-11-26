@@ -1,0 +1,15 @@
+2026-11-25 07:55:19,347 | INFO | hr_assistant.pipeline | Building HR assistant
+2026-11-25 07:55:19,354 | INFO | hr_assistant.pipeline | Vector store already exists, reusing it
+2026-11-25 07:55:19,354 | INFO | hr_assistant.vector_store | Loading faiss index from 'data\faiss.index'
+2026-11-25 07:55:19,354 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v3'
+2026-11-25 07:55:19,367 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-11-25 07:55:19,367 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-11-25 07:55:19,369 | INFO | faiss.loader | Loading faiss.
+2026-11-25 07:55:20,256 | INFO | faiss.loader | Successfully loaded faiss.
+2026-11-25 07:55:20,378 | INFO | hr_assistant.vector_store | Creating retrievers with top_k=3
+2026-11-25 07:55:20,383 | INFO | hr_assistant.llm | Intialized llm 'openai/gpt-oss-120b'
+2026-11-25 07:55:21,713 | INFO | hr_assistant.pipeline | HR assistant is ready to take questions
+2026-11-25 07:56:44,520 | INFO | hr_assistant.pipeline | User question: Hey, can you tell me about leave policies
+2026-11-25 07:56:45,348 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 07:56:47,113 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
