@@ -6,6 +6,8 @@ load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 JINA_API_KEY = os.getenv("JINA_API_KEY")
 
+# guard model name
+GUARD_MODEL_NAME = "openai/gpt-oss-safeguard-20b"
 
 # tracing
 
